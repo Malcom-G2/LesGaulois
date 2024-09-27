@@ -12,6 +12,7 @@ public class Romain {
         this.force = force;
     }
 
+    // Méthode pour recevoir un coup
     public void recevoirCoup(int forceCoup) {
         assert force > 0 : "La force doit être positive avant le coup";
         int ancienneForce = force;
@@ -24,7 +25,7 @@ public class Romain {
         assert force < ancienneForce : "La force doit avoir diminué après le coup";
     }
 
-
+    // Méthode pour s'équiper
     public void sEquiper(Equipement equipement) {
         switch (nbEquipement) {
             case 2:
@@ -47,7 +48,7 @@ public class Romain {
         }
     }
 
-
+    // Méthode pour parler
     public void parler(String texte) {
         System.out.println("Le romain " + nom + " : « " + texte + " »");
     }
