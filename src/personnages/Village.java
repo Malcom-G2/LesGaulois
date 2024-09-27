@@ -34,6 +34,7 @@ public class Village {
         }
     }
 
+    
     public void afficherVillageois() {
         if (chef != null) {
             System.out.println("Chef du village : " + chef.getNom());

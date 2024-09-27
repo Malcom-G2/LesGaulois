@@ -11,6 +11,7 @@ public class Scenario {
         Gaulois obelix = new Gaulois("Obélix", 25);
         Romain minus = new Romain("Minus", 6);
 
+        
         System.out.println("Le druide Panoramix : « Bonjour, je suis le druide Panoramix et ma potion peut aller d'une force 5 à 10.»");
         System.out.println("Le druide Panoramix : « Je vais aller préparer une petite potion...»");
         panoramix.preparerPotion();

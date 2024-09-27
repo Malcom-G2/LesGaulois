@@ -6,6 +6,7 @@ public class Romain {
     private Equipement[] equipements = new Equipement[2];
     private int nbEquipement = 0;
 
+
     public Romain(String nom, int force) {
         assert force > 0 : "La force doit être positive";
         this.nom = nom;
