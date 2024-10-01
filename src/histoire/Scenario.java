@@ -8,7 +8,7 @@ public class Scenario {
     public static void main(String[] args) {
         Druide panoramix = new Druide(5, 10);
         Gaulois asterix = new Gaulois("Astérix", 8);
-        Gaulois obelix = new Gaulois("Obélix", 25);
+        //Gaulois obelix = new Gaulois("Obélix", 25);
         Romain minus = new Romain("Minus", 6);
 
         
@@ -24,6 +24,6 @@ public class Scenario {
         System.out.println("Le gaulois Astérix : « Bonjour»");
         System.out.println("Le romain Minus : « UN GAU... UN GAUGAU...»");
         asterix.frapper(minus);
-        System.out.println("Le romain Minus : « J'abandonne...»");
+        
     }
 }

@@ -6,27 +6,24 @@ public class Romain {
     private Equipement[] equipements = new Equipement[2];
     private int nbEquipement = 0;
 
-
     public Romain(String nom, int force) {
         assert force > 0 : "La force doit être positive";
         this.nom = nom;
         this.force = force;
     }
 
-    // Méthode pour recevoir un coup
     public void recevoirCoup(int forceCoup) {
         assert force > 0 : "La force doit être positive avant le coup";
         int ancienneForce = force;
         force -= forceCoup;
         if (force > 0) {
-            parler("Aïe !");
+            parler("Aïe ! Ma force est maintenant de " + force);
         } else {
             parler("J'abandonne...");
         }
         assert force < ancienneForce : "La force doit avoir diminué après le coup";
     }
 
-    // Méthode pour s'équiper
     public void sEquiper(Equipement equipement) {
         switch (nbEquipement) {
             case 2:
@@ -49,7 +46,6 @@ public class Romain {
         }
     }
 
-    // Méthode pour parler
     public void parler(String texte) {
         System.out.println("Le romain " + nom + " : « " + texte + " »");
     }
@@ -64,9 +60,10 @@ public class Romain {
         minus.sEquiper(Equipement.CASQUE);
         minus.sEquiper(Equipement.CASQUE);
         minus.sEquiper(Equipement.BOUCLIER);
-        minus.sEquiper(Equipement.CASQUE); 
+        minus.sEquiper(Equipement.CASQUE);
 
-        minus.recevoirCoup(5);
+        //minus.recevoirCoup(5);
     }
 }
+
 
