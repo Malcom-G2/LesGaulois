@@ -21,19 +21,13 @@ public class Romain {
 		return "Le romain " + nom + " : ";
 	}
 
-	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
-		romain.recevoirCoup(force / 3);
-	}
-
 	public void recevoirCoup(int forceCoup) {
 		force -= forceCoup;
 		if (force > 0) {
-			parler("Aïe ! Ma force est maintenant de " + force);
+			parler("Aïe !");
 		} else {
 			parler("J'abandonne...");
 		}
 	}
 
 }
-
