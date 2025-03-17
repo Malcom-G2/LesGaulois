@@ -6,7 +6,7 @@ public class Chaudron {
 
     public Chaudron() {
         this.quantitePotion = 0;
-        this.forcePotion = 1; // Valeur par défaut
+        this.forcePotion = 1;
     }
 
     public void remplirChaudron(int quantite, int forcePotion) {
