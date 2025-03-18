@@ -3,12 +3,19 @@ import objets.Chaudron;
 
 public class Druide {
     private String nom;
+    private int force;
     private Chaudron chaudron;
 
-    public Druide(String nom) {
+    public String getNom() {
+		return nom;
+	}
+    
+    public Druide(String nom, int force) {
         this.nom = nom;
-        this.chaudron = new Chaudron();
+        this.force = force;
+        chaudron = new Chaudron();
     }
+    
 
     public void parler(String texte) {
         System.out.println(prendreParole() + "\"" + texte + "\"");
